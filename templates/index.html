@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Default font */
+            text-align: center; /* Center align all text */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #1DB954; /* Spotify Green */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #191414; /* Dark background color */
+            color: #fff;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #1DB954; /* Spotify Green on hover */
+            transform: scale(1.05); /* Slightly scale the button on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Spotify Dashboard</h1>
+    <p>Click below to log in to your Spotify account:</p>
+    <a href="{{ auth_url }}">Log in with Spotify</a>
+</body>
+</html>
